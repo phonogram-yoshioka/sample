@@ -13,7 +13,7 @@ $request  = $client->getMessageFactory()->createRequest();
 $response = $client->getMessageFactory()->createResponse();
 
     $request->setMethod('GET');
-    $request->setUrl('http://jonnyw.me');
+    $request->setUrl('http://www.phonogram.co.jp');
     
     $client->send($request, $response);
     
