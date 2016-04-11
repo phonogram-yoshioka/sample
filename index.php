@@ -12,4 +12,11 @@ $client->getEngine()->setPath(__DIR__ . '/bin/phantomjs');
 $request  = $client->getMessageFactory()->createRequest();
 $response = $client->getMessageFactory()->createResponse();
 
-var_dump($request);
+    $request->setMethod('GET');
+    $request->setUrl('http://jonnyw.me');
+    
+    $client->send($request, $response);
+    
+    if($response->getStatus() === 200) {
+        echo $response->getContent();
+    }
