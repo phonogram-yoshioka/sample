@@ -13,3 +13,5 @@ $request  = $client->getMessageFactory()->createRequest();
 $response = $client->getMessageFactory()->createResponse();
 
 var_dump($request);
+
+exit;
